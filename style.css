@@ -1,0 +1,224 @@
+:root{
+    --white : #ebf5ee; 
+    --ltblue:#78A1BB ;
+    --grey: #586F7C ;
+    --navy: #2F4550;
+    --black: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+.navbar{
+    background-color: var(--navy);
+}
+.dropdown-menu{
+    background: var(--navy);
+}
+.dropdown-menu a{
+    color: var(--white) !important;
+}
+.dropdown-menu a:hover{
+    color: var(--navy) !important;
+}
+/* CAROUSEL  */
+
+.carousel{
+    background: black;
+}
+.imger{
+    opacity: 0.6;
+}
+.carousel-caption{
+    /* border: 5px solid black; */
+    width: 70%;
+    height: 50%;
+    display: flex !important;
+    flex-direction: column;
+    color: var(--white);
+    /* justify-content: center; */
+}
+.sliderHeading{
+    font-size: 50px;
+}
+/* CATEGORIES */
+.categories-row{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*//////////////// T shirts  /////////////////*/
+
+.hero{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/shirts/pinho-GCAnKZM21_c-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items :center;
+    
+}
+.herojacket{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/hoodies/nijwam-swargiary-tsPaWCdGRIw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items :center;
+}
+.hero-heading{
+    font-size: 55px;
+    width: 70%;
+    color: var(--white);
+    opacity: 0;
+    animation: opacitated 2s forwards;
+    
+}
+@keyframes opacitated{
+    0%{
+        opacity:0;
+       /* transform: translate(-1000px); */
+    }
+    100%{
+        opacity:1;
+        /* transform: translate(0); */
+    }
+}
+.products{
+    margin-top: 70px;
+}
+.productsheading{
+    text-align: center;
+    font-size: 60px;
+    color: var(--black);
+}
+.underline{
+    border: 2px solid var(--ltblue);
+    border-radius: 10px;
+    width: 40%;
+}
+
+.cardrow1{
+    margin: 50px 10px;
+    /* background-color: var(--ltblue) */
+}
+.thecard{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 10px !important;
+
+    background: rgba( 88, 111, 124, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.2s;
+
+}
+.thecard:hover{
+    cursor: pointer;
+    transform: translateY(-5px) !important;
+}
+.thecard div{
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 20px 10px;
+}
+
+
+/*////////////////////////// MODAL  /////////////////////////////////*/
+.modal-dialog{
+    min-width: 70% !important;
+
+    
+}
+.modalrow div{
+    border-right: 1px solid black;
+}
+.modal-header,.modal-footer{
+    background-color: var(--ltblue) !important;
+    color: var(--white);
+}
+.counter{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    border: 1px solid black;
+}
+
+.counter>button{
+    width: 34%;
+    background-color: var(--ltblue);
+    color: var(--white);
+    border: none;
+    /* font-size: 25px; */
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.counter>button:hover{
+    background-color: var(--grey);
+    /* color: var(--ltblue); */
+}
+
+/* LARGE  */
+@media screen and (max-width: 992px){
+    .sliderHeading{
+        font-size: 30px;
+    }
+    .productsheading{
+        font-size: 50px;
+    }
+}
+
+/* MEDIUM  */
+@media screen and (max-width: 768px){
+    .sliderHeading{
+        font-size: 25px;
+    }
+    .productsheading{
+        font-size: 45px;
+    }
+    .underline{
+        width: 60%;
+    }
+}
+
+/* SMALL  */
+@media screen and (max-width: 576px){
+    .sliderHeading{
+        font-size: 16px;
+    }
+    .sliderinfo{
+        font-size: 12px;
+    }
+    .carousel-caption{
+        height: 70%;
+    }
+    .hero-heading{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .sliderHeading{
+        font-size: 12px;
+    }
+    .sliderinfo{
+        font-size: 8px;
+    }
+    .hero-heading{
+        font-size: 20px;
+    }
+}
