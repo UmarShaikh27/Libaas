@@ -27,7 +27,7 @@
   <!--NAVBAR START-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-none">
     <div class="container-md">
-      <a class="navbar-brand" href="#">Libas</a>
+      <a class="navbar-brand" href="#">L i B A A S.pk</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,21 +38,24 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Products
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tshirts.html">T-shirts</a>
-              <a class="dropdown-item" href="jackets.html">Jackets</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+            aria-expanded="false" onclick="prodfunc(this)">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="tshirts.html">T-shirts</a>
+            <a class="dropdown-item" href="jackets.html">Jackets</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
         </ul>
       </div>
     </div>
@@ -92,12 +95,12 @@
         </div>
       </div>
     </div>
-    <button style="background-color: #2F4550; width: 5%;" class="carousel-control-prev" type="button"
+    <button style="background-color: #0D1821; width: 5%;" class="carousel-control-prev" type="button"
       data-target="#carouselExampleCaptions" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
     </button>
-    <button style="background-color: #2F4550; width: 5%;" class="carousel-control-next" type="button"
+    <button style="background-color: #0D1821; width: 5%;" class="carousel-control-next" type="button"
       data-target="#carouselExampleCaptions" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
@@ -115,29 +118,29 @@
     <div class="categories-row row cardrow1 ">
     
       
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="thecard" data-aos="zoom-in">
-          <img width="100%" src="./images/Categories.jpg" alt="">
-          <div>
-            <h4>SHIRTS</h4>
-            <button class="btn btn-dark btn-sm">View more</button>
-          </div>
+      <div class="col-xlg-5 col-lg-5 col-md-6 col-sm-12">
+        <div class="catcard">
+          <img class="catimg" width="100%" src="./images/Categories.jpg" alt="">
+          <h1 class="category-heading">SHIRTS</h1>
+          <a href="tshirts.html" class="btn hideme animate__animated animate__fadeInUp" >Shop Now!</a>
+          
         </div>
       </div> 
       
-      <div class="col-lg-4 col-md-4 col-sm-6" >
-        <div class="thecard" data-aos="zoom-in" >
+      <div class="col-xlg-5 col-lg-5 col-md-6 col-sm-12" >
+        <div class="catcard" >
           <img width="100%" src="./images/categories (2).jpg" alt="">
-          <div>
-          <h4>JACKETS</h4>
-          <button class="btn btn-dark btn-sm">View more</button>
-          </div>
+          <h1 class="category-heading">JACKETS</h1>
+          <a href="jackets.html" class="btn hideme animate__animated animate__fadeInUp">Shop Now!</a>
         </div>
       </div>
     </div>
   </div>
 
   <!--CATEGORIES END-->
+
+  <!-------------TRYING -------->
+
 
 
 

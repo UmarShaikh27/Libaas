@@ -2,7 +2,8 @@
     --white : #ebf5ee; 
     --ltblue:#78A1BB ;
     --grey: #586F7C ;
-    --navy: #2F4550;
+    --navy: #0D1821;
+    --envy: #2F4550;
     --black: #000000;
 }
 *{
@@ -14,7 +15,7 @@
 
 /* NAVBAR */
 .navbar{
-    background-color: var(--navy);
+    background-color: #0D1821;
 }
 .dropdown-menu{
     background: var(--navy);
@@ -45,10 +46,56 @@
 .sliderHeading{
     font-size: 50px;
 }
-/* CATEGORIES */
+
+
+/*// CATEGORIES //*/
 .categories-row{
     display: flex;
     justify-content: center;
+}
+.catcard{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catcard::before{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.category-heading{
+    
+    font-size: 60px;
+    color: var(--white);
+    position: absolute;
+    top: 65%;
+    left: 25%;
+
+}
+.hideme{
+    background: var(--grey);
+    font-size: 25px;
+    color: white;
+    position: absolute;
+   border-radius: 0 !important;
+    display: none;
+    transition: 0.5s all;
+}
+.catcard:hover .hideme{
+    display: block;
+}
+.catcard:hover::before{
+    opacity: 1;
+}
+
+.hideme:hover{
+    background: var(--envy);
+    color: var(--white);
 }
 
 
@@ -116,22 +163,40 @@
     flex-direction: column;
     margin: 10px 0;
     border-radius: 10px !important;
+    color: var(--navy);
 
-    background: rgba( 88, 111, 124, 0.25 );
+    /* background: rgba( 88, 111, 124, 0.25 ); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: all 0.2s;
-
+    position: relative;
+    
+    
 }
+/* .thecard::before{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+.thecard:hover::before{
+    opacity: 1;
+
+} */
+
 .thecard:hover{
     cursor: pointer;
     transform: translateY(-5px) !important;
 }
 .thecard div{
-    color: var(--white);
-    background-color: var(--grey);
+    /* color: var(--white); */
+    /* background-color: var(--grey); */
     padding: 20px 10px;
 }
 
@@ -146,7 +211,7 @@
     border-right: 1px solid black;
 }
 .modal-header,.modal-footer{
-    background-color: var(--ltblue) !important;
+    background-color: var(--envy) !important;
     color: var(--white);
 }
 .counter{
@@ -222,3 +287,11 @@
         font-size: 20px;
     }
 }
+
+
+
+
+
+
+
+

@@ -15,3 +15,6 @@ function modalfunc(x){
     // img.src = imageofmodal
     imageofmodal.src = img.src
 }
+function prodfunc(x){
+    x.parentNode.classList.add("active")
+}
