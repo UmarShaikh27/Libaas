@@ -102,7 +102,7 @@
 /*//////////////// T shirts  /////////////////*/
 
 .hero{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/shirts/pinho-GCAnKZM21_c-unsplash.jpg);
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@
     
 }
 .herojacket{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/hoodies/nijwam-swargiary-tsPaWCdGRIw-unsplash.jpg);
     background-repeat: no-repeat;
@@ -164,31 +164,70 @@
     margin: 10px 0;
     border-radius: 10px !important;
     color: var(--navy);
-
+    justify-content: center;
+    align-items: center;
     /* background: rgba( 88, 111, 124, 0.25 ); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    transition: all 0.2s;
+    transition: all 1s;
     position: relative;
     
+}
+.thecard>div{
+    /* justify-self: flex-start; */
+    align-self: flex-start;
+}
+.cardbtn{
+    display: none;
+    position: absolute;
+    
+
+}
+
+.addtocart{
+    min-width: 45%;
+    color: var(--white);
+    /* background-color: rgb(115, 160, 25); */
+    background-color: var(--ltblue);
+
+}
+.addtocart:hover{
+    background-color: var(--white);
+    /* color: rgb(115, 160, 25); */
+    color: var(--ltblue);
+}
+.cardviewmore{
+    bottom: 35%;
+    color: var(--ltblue);
+    text-decoration: none;
+}
+.cardviewmore:hover{
+    bottom: 35%;
+    color: var(--grey);
     
 }
-/* .thecard::before{
+
+.thecard::before{
     position: absolute;
     content: "";
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
     
 }
+.thecard:hover .cardbtn{
+    display: block;
+    transition:  0.5s;
+    
+}
 .thecard:hover::before{
     opacity: 1;
 
-} */
+}
 
 .thecard:hover{
     cursor: pointer;
@@ -200,42 +239,86 @@
     padding: 20px 10px;
 }
 
-
 /*////////////////////////// MODAL  /////////////////////////////////*/
-.modal-dialog{
+.viewModal{
     min-width: 70% !important;
 
-    
 }
 .modalrow div{
     border-right: 1px solid black;
 }
-.modal-header,.modal-footer{
+.headModalone,.footModalone{
     background-color: var(--envy) !important;
     color: var(--white);
 }
 .counter{
+    margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 110px;
-    border: 1px solid black;
+    background-color: lightgrey;
+    /* border: 1px solid black; */
 }
-
+.counter p{
+    margin: 0 !important;
+}
 .counter>button{
+   
     width: 34%;
+    height: 100%;
     background-color: var(--ltblue);
     color: var(--white);
     border: none;
-    /* font-size: 25px; */
+
     font-weight: bold;
     transition: all 0.2s;
 }
 .counter>button:hover{
+   
     background-color: var(--grey);
-    /* color: var(--ltblue); */
 }
+.modaladdcart{
+    border-radius: 0;
+    margin-top: 10px;
+    width: 60%;
+    background-color: var(--ltblue);
+    color: var(--white);
+    transition: all 0.3s;
+}
+.modaladdcart:hover{
+    background-color: var(--white);
+    color: var(--ltblue);
+}
+.modaloverview{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* SECOND MODAL*/
+
+.addModaldialogue{
+    min-width: 50%;
+}
+
+.headModaltwo{
+    /* background-color: rgb(162, 221, 45); */
+    background-color: var(--ltblue);
+    color: var(--white);
+}
+.modal-header{
+    border: none;
+    outline: none;
+}
+.closeModal{
+    color: var(--white) ;
+}
+
+/*////MEDIA QUERIES //////////*/
 
 /* LARGE  */
 @media screen and (max-width: 992px){
@@ -274,6 +357,7 @@
     .hero-heading{
         font-size: 30px;
     }
+    
 }
 
 @media screen and (max-width: 420px){
@@ -291,7 +375,34 @@
 
 
 
+.contact{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items :flex-start;
+}
 
+.contactForm{
+    margin-top: 100px;
+    width: 40%;
+    height: 100vh;
+    border: 1px solid black;
 
+}
+.contactForm input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.contactForm input:focus{
+    border-bottom: 1px solid --grey !important;
+    box-shadow: none !important;
 
+}
 
