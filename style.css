@@ -318,6 +318,91 @@
     color: var(--white) ;
 }
 
+
+
+
+/*////////////// CONTACT  ////////////////////*/
+
+
+.contact{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items :flex-start;
+}
+
+.contactFormParent{
+    /* margin-top: 100px; */
+    padding:100px 0 30px 0 ;
+    /* background: linear-gradient(#2F4550,black); */
+    background: var(--navy);
+}
+
+.contactForm{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    width: 40%;
+    /* height: 100vh; */
+    /* border: 1px solid black; */
+    border-radius: 0px;
+background: #2F4550;
+box-shadow: inset 37px 37px 77px #1b272e,
+            inset -37px -37px 77px #436372;
+
+
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    background: transparent;
+    color: var(--white) !important;
+}
+.contactForm input:focus{
+    box-shadow: none !important;
+    background: transparent;
+}
+.contactForm textarea{
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    color: var(--white) !important;
+}
+.contactForm textarea:focus{
+    box-shadow: none !important;
+    background: transparent;
+}
+.formbtn{
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 20px;
+    background: var(--grey);
+    color: var(--white);
+    transition: all 0.3s;
+    text-align: center;
+}
+.formbtn:hover{
+    background-color: var(--envy);
+    color: var(--white);
+}
+
+
+
+
+
+
 /*////MEDIA QUERIES //////////*/
 
 /* LARGE  */
@@ -372,37 +457,4 @@
     }
 }
 
-
-
-
-.contact{
-    min-height: 80vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/contact-us.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items :flex-start;
-}
-
-.contactForm{
-    margin-top: 100px;
-    width: 40%;
-    height: 100vh;
-    border: 1px solid black;
-
-}
-.contactForm input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-}
-.contactForm input:focus{
-    border-bottom: 1px solid --grey !important;
-    box-shadow: none !important;
-
-}
 
