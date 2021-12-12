@@ -142,6 +142,7 @@
 }
 .products{
     margin-top: 70px;
+    margin-bottom: 30px;
 }
 .productsheading{
     text-align: center;
@@ -319,6 +320,38 @@
 }
 
 
+/*////////////ABOUT US//////////////*/
+.aboutcontainer{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.aboutcontainer p{
+    padding: 10px 0 10px 0;
+}
+.reviewscontainter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fa-user{
+    font-size: 35px;
+    background: var(--grey);
+    border-radius: 50%;
+    padding: 15px;
+    color: var(--white);
+}
+.fa-quote-right{
+    font-size: 20px;
+    color: var(--grey);
+}
+
+
+
+
+
+
 
 
 /*////////////// CONTACT  ////////////////////*/
@@ -341,7 +374,7 @@
     /* margin-top: 100px; */
     padding:100px 0 30px 0 ;
     /* background: linear-gradient(#2F4550,black); */
-    background: var(--navy);
+    /* background: var(--navy); */
 }
 
 .contactForm{
@@ -349,12 +382,11 @@
     padding-bottom: 50px;
     flex-direction: column;
     width: 40%;
-    /* height: 100vh; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-radius: 0px;
-background: #2F4550;
-box-shadow: inset 37px 37px 77px #1b272e,
-            inset -37px -37px 77px #436372;
+    /* background: #2F4550; */
+    /* box-shadow: inset 37px 37px 77px #1b272e,
+            inset -37px -37px 77px #436372; */
 
 
 }
@@ -368,7 +400,7 @@ box-shadow: inset 37px 37px 77px #1b272e,
     border-bottom: 1px solid black;
     margin-bottom: 30px;
     background: transparent;
-    color: var(--white) !important;
+    color: var(--black) !important;
 }
 .contactForm input:focus{
     box-shadow: none !important;
@@ -378,7 +410,7 @@ box-shadow: inset 37px 37px 77px #1b272e,
     width: 100%;
     background: transparent;
     border: 1px solid black;
-    color: var(--white) !important;
+    color: var(--black) !important;
 }
 .contactForm textarea:focus{
     box-shadow: none !important;
@@ -401,6 +433,107 @@ box-shadow: inset 37px 37px 77px #1b272e,
 
 
 
+/*//////////////FOOTER////////////////////*/
+.mainFooter{
+    padding: 50px 0 0 0;
+    background: var(--navy);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mainFooter ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+   
+    
+}
+.mainFooter a{
+    color: var(--white);
+    text-decoration: none;
+}
+.mainFooter a:hover{
+    color: var(--ltblue);
+}
+.listHeading{
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.listdesc{
+    position: relative;
+    margin-bottom: 6px;
+
+}
+.listdesc:hover{
+    cursor: pointer;
+    color: var(--ltblue);
+}
+
+.listdesc::before{
+    content: "";
+    position: absolute;
+    border: 1px solid var(--white);
+    width: 0;
+    bottom: 0;
+    /* display: none; */
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.listdesc:hover::before{
+    /* display: block; */
+    visibility: visible;
+    width: 70%;
+}
+.footericon{
+    font-size: 25px;
+    margin: 0 5px 15px 5px;
+    padding: 10px;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.footericon:hover{
+    cursor: pointer;
+    color: var(--white);
+}
+.fa-instagram:hover{
+    background: rgb(235, 129, 30);
+}
+.fa-facebook:hover{
+    background: rgb(39, 126, 226);
+}
+.fa-whatsapp:hover{
+    background: rgb(72, 206, 55);
+}
+.mainFooter input{
+    background: transparent;
+    border: 1px solid --white;
+    padding: 2px 30px 2px 30px;
+    color: white;
+}
+.mainFooter input:focus{
+    outline: none;
+}
+
+.btnfooter{
+    color: var(--white);
+    background: var(--envy);
+    border-radius: 0;
+    padding: 2px 25px 2px 25px !important;
+}
+.btnfooter:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.footerSeparate{
+    border-top: 1px solid var(--grey);
+    margin: 5px 0;
+    width: 100%;
+}
+
+
 
 
 /*////MEDIA QUERIES //////////*/
@@ -412,6 +545,9 @@ box-shadow: inset 37px 37px 77px #1b272e,
     }
     .productsheading{
         font-size: 50px;
+    }
+    .contactForm{
+        width: 55%;
     }
 }
 
@@ -425,6 +561,12 @@ box-shadow: inset 37px 37px 77px #1b272e,
     }
     .underline{
         width: 60%;
+    }
+    .contactForm{
+        width: 60%;
+    }
+    .mainFooter ul{
+        width: 30%;
     }
 }
 
@@ -442,6 +584,13 @@ box-shadow: inset 37px 37px 77px #1b272e,
     .hero-heading{
         font-size: 30px;
     }
+    .contactForm{
+        width: 90%;
+    }
+    .mainFooter ul{
+        width: 45%;
+        padding-bottom: 10px;
+    }
     
 }
 
@@ -454,6 +603,12 @@ box-shadow: inset 37px 37px 77px #1b272e,
     }
     .hero-heading{
         font-size: 20px;
+    }
+    .contactForm{
+        width: 100%;
+    }
+    .mainFooter ul{
+        width: 90%;
     }
 }
 
