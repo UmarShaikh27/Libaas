@@ -27,7 +27,7 @@
   <!--NAVBAR START-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-none" style="position: sticky;top: 0; z-index: 111;">
     <div class="container-md">
-      <a class="navbar-brand" href="javascript:void(0)">L i B A A S.pk</a>
+      <a class="navbar-brand" href="index.html">L i B A A S.pk</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -114,7 +114,7 @@
     <h1 class="productsheading">CATEGORIES</h1> 
     <div class="container underline"></div>
     
-    <div class="categories-row row cardrow1 ">
+    <div class="categories-row row cardrow1">
     
       
       <div class="col-xlg-5 col-lg-5 col-md-6 col-sm-12">
@@ -137,6 +137,185 @@
   </div>
 
   <!--CATEGORIES END-->
+
+
+
+<!--------LIMITED ED START---------->
+
+
+
+
+
+
+
+
+
+<!--------LIMITED ED END---------->
+
+<div class="container-md ">
+
+
+<div class="limited">
+  <h1 class="productsheading">LIMITED EDITIONS</h1>
+  <div class="container underline">
+
+  </div>
+
+  <div class="offerendsin">
+    <h1 class="offerheading">OFFER ENDS IN:</h1>
+    <div class="timerdiv">
+      <div>
+        <h1 class="timerelements" id="days">15</h1>
+        <h2>Days</h2>
+      </div>
+
+      <div>
+      <h1 class="timerelements" id="hours">21</h1>
+      <h2>Hours</h2>
+      </div>
+
+     <div>
+      <h1 class="timerelements" id="minutes">01</h1>
+      <h2>Minutes</h2>
+     </div>
+
+      <div>
+      <h1 class="timerelements" id="seconds">06</h1>
+      <h2>Seconds</h2>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+ <div class="limitedrow cardrow1 row" style="margin: 50px auto;">
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6" >
+      <div class="thecard" data-aos="fade-up" data-aos-duration = 800>
+        <img width="100%" src="./images/shirts/SHIRT (4).jpeg" alt="">
+        <button class="btn cardbtn addtocart animate__animated animate__fadeIn" data-toggle="modal" data-target="#addModal">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+        <a onclick="modalfunc(this)" class="cardviewmore cardbtn animate__animated animate__fadeIn" data-toggle="modal" data-target="#exampleModal">View more  </a>
+        <div>
+        <h4>Travis(Special Ed)</h4>
+        <h6 style=" color: var(--navy);"><del>Rs.999</del>Rs.799</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6" >
+      <div class="thecard" data-aos="fade-up" data-aos-duration = 800>
+        <img width="100%" src="./images/shirts/shirt(pack of 4).jpeg" alt="">
+        <button class="btn cardbtn addtocart animate__animated animate__fadeIn" data-toggle="modal" data-target="#addModal">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+        <a onclick="modalfunc(this)" class="cardviewmore cardbtn animate__animated animate__fadeIn" data-toggle="modal" data-target="#exampleModal">View more  </a>
+        <div>
+        <h4>4 T-shirts(any print)</h4>
+        <h6 style=" color: var(--navy);"><del>Rs.2199</del>Rs.1899</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6" >
+      <div class="thecard" data-aos="fade-up" data-aos-duration = 800>
+        <img width="100%" src="./images/shirts/SHIRT (9).jpeg" alt="">
+        <button class="btn cardbtn addtocart animate__animated animate__fadeIn" data-toggle="modal" data-target="#addModal">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+        <a onclick="modalfunc(this)" class="cardviewmore cardbtn animate__animated animate__fadeIn" data-toggle="modal" data-target="#exampleModal">View more  </a>
+        <div>
+        <h4>Widow(Special Ed)</h4>
+        <h6 style=" color: var(--navy);"><del>Rs.999</del>Rs.799</h6>
+        </div>
+      </div>
+    </div>
+    
+
+    </div> 
+
+</div>
+
+
+
+
+<!--MODAL START-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog viewModal">
+    <div class="modal-content">
+      <div class="modal-header headModalone">
+        
+        <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row modalrow">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img width="100%" src="" alt="" id="imageofmodal">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 textofmodal">
+            <h3 id="prodName"></h3>
+            <p id="prodPrice"></p>
+            <div class="counter" id="modalCounter">
+              <button onclick="minusfunc(this)">-</button>
+              <p>1</p>
+              <button onclick="plusfunc(this)">+</button>
+            </div>
+            <button class="btn modaladdcart" data-toggle="modal" data-target="#addModal"> <i  class="fas fa-shopping-cart" style="margin-right: 10px;"></i>Add To Cart</button>
+            <div class="modaloverview">
+              <h4>Overview:</h4>
+            <ul>
+              <li>Delivery all across Karachi</li>
+              <li>No Return</li>
+              <li>Exchange available within 15 days (over an arguable fault)</li>
+              <li>100% Refined quality products</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer footModalone">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--MODAL END-->
+
+
+<!---------- ADD TO CART MODAL START ---------->
+  
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal-dialog addModaldialogue">
+    <div class="modal-content">
+      <div class="modal-header headModaltwo">
+        <h5 class="modal-title" id="addModalLabel"><i class="fas fa-cart-plus" style="margin-right: 10px;"></i> Your product has been added to your cart!</h5>
+        <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <!-- <i class="fas fa-times"></i> -->
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!---------- ADD TO CART MODAL END ---------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!----------FOOTER START ------------->
 
@@ -176,7 +355,7 @@
     </li>
     <li class="listHeading">SIGN UP FOR OUR NEWSLETTER</li>
     <li class="mb-3" >Get special discounts and promotions only via email</li>
-    <li><input type="email" placeholder="enter your email address"><button class="btn btnfooter ml-3 mt-3">SUBMIT</button></li>
+    <li><input type="email" placeholder="enter your email address"><button class="btn btnfooter ml-3">SUBMIT</button></li>
   </ul>
   
 <div class="footerSeparate"></div>
